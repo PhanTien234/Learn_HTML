@@ -1,5 +1,5 @@
 <!DOCTYPE html> <!-- It declaration defines that this document is an HTML5 document-->
-<html lang="en"> <!--This element is the root element of an HTML page-->
+<html lang="en"> <!--This element is the root element of an HTML page, the lang attribute used to declare the language of the Web page-->
 <head> <!--this element contains meta information -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,18 @@
 <body><!--This element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->
     <h1>My First Heading</h1> <!--element defines a large heading. Note: HTML headings are defined with the <h1> to <h6> tags-->
     <h2>This is Second paragraph</h2>
-    <p>My First paragraph</p> <!--element defines a paragraph-->
+    <p style="color:red">My First paragraph</p> <!--element defines a paragraph, The Style attribute is used to add styles to an element, such as color, font, size, and, more-->
     <a href="http://github.com">This is a link</a> <!--HTML links are defined with the <a> tag, The link's destination is specified in the href attribute-->
     <img src="anhdep.jpg" alt="anhdep.com" width="104" height="142"> <!--HTML images are defined with the <img> tag. The source file (src), alternative text (alt), width, and height are provided as attributes-->
+    <!--There are two ways to specify the URL in the src attribute:
+    1. Absolute URL: Links to an external image that is hosted on another website.
+    Ex: src="https://www.example.com/images/img_girl.jpg".
+    Note: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+    2. Relative URL: Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. 
+    Ex: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. 
+    Ex: src="/images/img_girl.jpg". 
+    Tip: It is almost always best to use relative URLs. They will not break if you change domain.
+    -->
 </body>
 </html>
 
@@ -19,5 +28,12 @@
 <!--An HTML element is everything from start tag to the end tag
     <tagname> Content goes here</tagname>
 
-    But, Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!
+    But, Some HTML elements have no content (like the <br> element have the enter function). These elements are called empty elements. Empty elements do not have an end tag!
+    Note: HTML is Not Case Sensitive, that means HTML tags are not case sensitive: <P> means the same as <p>
+-->
+<!--HTML Attributes
+    All HTML elements can have attributes
+    Attribute provide additional information about elements
+    Attributes are always specified in the start tag
+    Attributes usually come in name/value pairs like: name="value"
 -->
