@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML IMAGE MAPS</title>
+</head>
+<body>
+    <!-- <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="computer.htm" alt="Computer">
+        <area shape="rect" coords="290,127,333,250" href="phone.htm" alt="Phone">
+        <area shape="circle" coords="337,300,44" href="coffee.html" alt="Coffee">
+    </map> -->
+
+    <!-- Another the way for Images use Maps apply shape 'poly'
+    <img src="frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675">
+
+    <map name="foodmap">
+        <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm" alt="">
+    </map> -->
+
+    <!--Another way for Images use Maps and JavaScript-->
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="circle" coords="337,304,44" href="coffee.htm" onclick="myFunction()">
+    </map>
+
+    <script>
+        function myFunction(){
+            alert("You clicked the coffee cup!")
+        }
+    </script>
+
+
+
+</body>
+</html>
+
+<!--Image Maps
+The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags
+For shape 'rect' the coords will show by the x1,y1 and x2,y2
+For shape 'circle' the coords will show by the x, y and r(radius)
+-->
