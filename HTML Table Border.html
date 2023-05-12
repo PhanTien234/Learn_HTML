@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Border Table</title>
+    <style>
+        /*Skip the border around the table*/
+         td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-radius: 15px;
+         }
+        /* table td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-radius: 15px;
+         } */
+
+         th, td{
+            background-color: #ff00ff;
+            border-style: dotted;
+            border-color: #00ff00;
+         }
+    </style>
+</head>
+<body>
+    <h2>Table With Border</h2>
+
+    <p>Use the CSS border property to add a border to the table</p>
+
+     <table style="width: 100%;">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+         <tr>
+            <td>Jill</td>
+            <td>Smill</td>
+            <td>50</td>
+         </tr>
+         <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+         </tr>
+         <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+         </tr>
+     </table>
+</body>
+</html>
+
+<!--HTML Table Border
+    boder: 1px solid black
+
+    Collapsed Table Borders
+    To avoid having borders like in example above, ser the CSS 'border-collapse: collapse'
+
+    you can set background color for Table by 'background-color: yourcolor'
+    you can create Round Table borders by 'border-radius: 10px'
+    With the 'border-style' property, you can set the appearance of the border.
+        The following values are allowed:
+        - dotted
+        - dashed
+        - solid
+        - double
+        - groove
+        - ridge
+        - inset
+        - outset
+        - none
+        - hidden
+    With the 'border-color' property, you can set the color of the border.
+-->
