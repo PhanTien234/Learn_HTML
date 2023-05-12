@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Header</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2>Table Header</h2>
+    <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+    </table> -->
+
+    <!-- Vertical Table Headers
+    <table style="width: 100%;">
+        <tr>
+          <th>Firstname</th>
+          <td>Jill</td>
+          <td>Eve</td>
+        </tr>
+        <tr>
+          <th>Lastname</th>
+          <td>Smith</td>
+          <td>Jackson</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td>94</td>
+          <td>50</td>
+        </tr>
+    </table> -->
+
+    <h2>A header that spans two columns</h2>
+
+    <p>Use the colspan attribute to have a header span over multiple columns.</p>
+
+    <table style="width:100%">
+        <caption>Information</caption>
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    </table>
+</body>
+</html>
+
+<!--Align Table Headers
+To left-align the table headers, use the CSS 'text-align' property-->
+
+<!--Header for Multiple Columns
+You can have header that spans over two or more columns.
+To do this, use the 'colspan' attribute on the <th> element.
+-->
+
+<!--Table Caption
+You can add a caption that serves as a heading for the entire table.
+To add a caption to a table, use the <caption> tag.
+-->
