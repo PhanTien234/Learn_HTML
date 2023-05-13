@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Styling </title>
+    <style>
+        table{
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+
+        }
+        
+        td, th{
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Vertical Zebra Stripes
+        tr:nth-child(even){
+            background-color: tomato;
+        } */
+
+        /*Combine Vertical and Horizontal Zebra Stripes*/
+        th:nth-child(even), td:nth-child(even){
+            background-color: rgba(255, 0, 0, 1);
+        }
+
+        /* Horizontal Dividers
+        tr{
+            border-bottom: 1px solid #ddd;
+        } */
+
+        /*hover*/
+        tr:hover{
+            background-color: #d6eeee;
+        }
+    </style>
+</head>
+<body>
+    <h2>Zebra Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<table style="width: 100%;">
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+  </tr>
+  <tr>
+  <td>Peter</td>
+  <td>Griffin</td>
+  <td>$100</td>
+  </tr>
+  <tr>
+  <td>Lois</td>
+  <td>Griffin</td>
+  <td>$150</td>
+  </tr>
+  <tr>
+  <td>Joe</td>
+  <td>Swanson</td>
+  <td>$300</td>
+  </tr>
+  <tr>
+  <td>Cleveland</td>
+  <td>Brown</td>
+  <td>$250</td>
+  </tr>
+</table>
+</body>
+</html>
+
+<!--Zebra Stripes
+If you add a background color on every other table row, you will get a nice zebra stripes effect.
+To style every other table row element, use the :nth-child(even) selector like this:
+'tr:nth-child(even){
+    background-color: yourcolor
+}'
+-->
+<!--HTML Table-Vertical Zebra Stripes
+To make vertical zebra stripes, style every other colomn, instead of every other row.
+Set the :nth0child(even) for table data elements like this:
+'td:nth-child(even){
+    background-color: yourcolor
+}
+-->
+
+<!--Combine Vertical anf Horizontal Zebra Stripes
+You can combine the styling from the two examples above and you will have stripes on every other row and every other column.
+If you use a transparent  color you will get an overlapping effect.
+Use an rgba() color to specify the transparency of the color:
+'tr:nth-child(even){
+    background-color: rgba(150,212,212,0.4)
+}
+th:nth-child(even), td:nth-child(even){
+    background-color: rgba(150,212,212,0.4);
+}
+'
+-->
+
+<!--Horizontal Dividers
+If you specify borders only at the bottom of each table row, you will have a table with horizontal dividers.
+Add the border-bottom property to all tr elements to get horizontal dividers:
+'tr{
+    border-bottom: 1px solid yourcolor;
+}'
+-->
+
+<!--Hoverable Table
+Use the :hover selector on 'tr' to highlight table rows on mouse over:
+'tr:hover{
+    background-color: yourcolor;
+}'
+-->
