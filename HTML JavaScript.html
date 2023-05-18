@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JavaScript</title>
+</head>
+<body>
+    <h1>My First JavaScript</h1>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time</button>
+    <p id="demo"></p>
+
+    <!--The HTML <script> Tag-->
+    <h2>Use JavaScript to Change Text</h2>
+    <p id="demo1"></p>
+    <script>
+        document.getElementById("demo1").innerHTML = "Hello JavaScript"
+    </script>
+
+    <!--The JavaScript can change the content-->
+    <h2>JavaScript change the content</h2>
+    <button type="button" onclick="myFunction()">Click me!</button>
+    <p id="demo2">This is a demonstration</p>
+
+    <script>
+        function myFunction(){
+            document.getElementById("demo2").innerHTML = "Hello World!"
+        }
+    </script>
+
+    <!--The JavaScript can change style-->
+    <p id="demo3">The paragraph for apply javascript to change the style</p>
+    <script>
+        function styleFunction(){
+            document.getElementById("demo3").style.fontSize ="25px";
+            document.getElementById("demo3").style.color ="red";
+            document.getElementById("demo3").style.backgroundColor = "yellow"
+        }
+    </script>
+    <button type="button" onclick="styleFunction()">Please Click me!</button>
+
+    <!--JavaScript can change attribute-->
+    <h1>Turn On or OFF the Light</h1>
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image</p>
+
+    <script>
+        function light(sw){
+            var pic;
+            if (sw ==0){
+                pic = "pic_bulboff.gif"
+            }else{
+                pic = "pic_bulbon.gif"
+            }
+            document.getElementById("myImage").src = pic;
+        }
+    </script>
+
+    <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+    <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+
+    <!--The HTML <noscript> Tag-->
+    <p id="demo4"></p>
+
+    <script>
+        document.getElementById("demo4").innerHTML ="Hello LO LO";
+    </script>
+
+    <noscript>Sorry, your browser does not support Javascript!</noscript>
+
+    <p>A browser without support for JavaScript will show thr text written inside the noscript element</p>
+    
+</body>
+</html>
+
+<!--HTML Javascript
+Javascript makes HTML pages more dynamic and interactive
+The HTML <script> tag is used to define a client-side script (JavaScript)
+The <script> element either contains script statements, or it points to an external script file through the 'src' attribute.
+Common uses JavaScript are image manipulation, form validation, and dynamic changes of content.
+To select an HTML element JavaScript most often uses the 'document.getElementById()' method.
+This JavaScript example writes "Hello JavaScript!" into an HTML element with id ="demo"
+-->
